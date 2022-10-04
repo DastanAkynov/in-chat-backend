@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "@Modules": ["./src/modules"],
+      "@Services": ["./src/modules/services"],
+      "@Entities": ["./src/entities"],
+      "@Config": ["./src/config/app.config"],
+      "@TypeormConfig": ["./src/config/typeorm.config"],
+      "@Types": ["./src/shared/types/index"],
+      "@Enums": ["./src/shared/types/enums"],
+      "@Constants": ["./src/utils/constants"],
+      "@Helpers": ["./src/utils/helpers"],
+      "@Guards/*": ["./src/shared/guards/*"],
+      "@Decorators/*": ["./src/shared/decorators/*"],
+      "@Middlewares/*": ["./src/shared/middlewares/*"],
+      "@App/*": ["./src/*"],
+    }
+  }
+}
